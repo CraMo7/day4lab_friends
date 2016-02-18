@@ -10,7 +10,6 @@
 # INSANE
 # Find the people who have the same favourite tv show
 
-
 def favourite_tv_show( person_var )
   return person_var[:favourites][:tv_show]
 end
@@ -22,6 +21,6 @@ def check_food_liking( person_var, food_var )
 end
 
 def add_new_friend( person_var, new_friend )
-  new_friend << person_var[:friends]
+  person_var[:friends] << new_friend
   return 
 end
