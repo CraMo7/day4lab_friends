@@ -11,9 +11,12 @@
 # Find the people who have the same favourite tv show
 
 
-
-#HELLLLLLLOOOOOOOOO CRAAAAIIIGIGGGGG
-
 def favourite_tv_show( person_var )
   return person_var[:favourites][:tv_show]
+end
+
+def check_food_liking( person_var, food_var )
+  person_food_array = person_var[:favourites][:things_to_eat]
+  bool_var = person_food_array.include?(food_var)
+  return bool_var
 end
