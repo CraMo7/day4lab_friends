@@ -13,3 +13,7 @@
 
 
 #HELLLLLLLOOOOOOOOO CRAAAAIIIGIGGGGG
+
+def favourite_tv_show( person_var )
+  return person_var[:favourites][:tv_show]
+end
