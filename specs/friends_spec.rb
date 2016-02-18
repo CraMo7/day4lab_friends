@@ -83,6 +83,12 @@ class TestFriends < MiniTest::Test
     end  
 
   # 3. Allow a new friend to be added to a given person
+  def test_add_new_friend
+    add_new_friend(@person5, "Jason")
+    result = @person5[:friends].last
+    assert_equal("Jason", result)    
+  end
+
   # 4. Allow a friend to be removed from a given person
   # 5. Find the total of everyone's money
   # 6. For two given people, allow the first person to loan a given value of money to the other
