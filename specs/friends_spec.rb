@@ -69,13 +69,19 @@ class TestFriends < MiniTest::Test
   def test_favourite_tv_show
     result = favourite_tv_show(@person5)
     assert_equal("Scrubs", result)
-    
   end
 
-
-
-
   # 2. For a given person, check if they like a particular food
+  def test_check_food_liking_true
+    result = check_food_liking(@person3, "stew")
+    assert_equal(true, result)
+  end
+
+  def test_check_food_liking_false
+    result = check_food_liking(@person5, "chocolate")
+    assert_equal(false, result)
+    end  
+
   # 3. Allow a new friend to be added to a given person
   # 4. Allow a friend to be removed from a given person
   # 5. Find the total of everyone's money
