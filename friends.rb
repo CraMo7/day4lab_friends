@@ -20,3 +20,8 @@ def check_food_liking( person_var, food_var )
   bool_var = person_food_array.include?(food_var)
   return bool_var
 end
+
+def add_new_friend( person_var, new_friend )
+  new_friend << person_var[:friends]
+  return 
+end
